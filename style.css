@@ -1,0 +1,206 @@
+
+.hero {
+  /* ناوی وێنەکەت لێرە دابنێ */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/642491145917694002/1497650753643479190/Cfx.re_C_Users_dssto_AppData_Local_FiveM_FiveM.exe_Screenshot_2026.03.13_-_00.25.53.94.png?ex=69ee4b74&is=69ecf9f4&hm=00363315113d8f843a552af3419e9498880b0f6c67432ec1c94aedb7e3af941c&=&format=webp&quality=lossless&width=809&height=455');
+  
+  height: 100vh; /* بەرزییەکەی هێندەی شاشەکە لێ دەکات */
+  background-size: cover;
+  background-position: center;
+  
+  /* بۆ هێنانی تێکست بۆ ناوەڕاست */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+.audio-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border: 2px solid #000000; /* Rangy neon purple */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+#playBtn {
+    background: linear-gradient(45deg, #000000, #00d2ff);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volumeSlider {
+    accent-color: #00d2ff;
+    width: 80px;
+    cursor: pointer;
+}
+
+.audio-info {
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.code-bg {
+  /* Replace URL with your specific image path */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url('https://media.discordapp.net/attachments/1484667612716597310/1484709904982867979/Cfx.re_C_Users_dssto_AppData_Local_FiveM_FiveM.exe_Screenshot_2026.03.13_-_00.25.53.94.png?ex=69ec0a59&is=69eab8d9&hm=84ee810dd1625ccdaa68ef219860e350462248df8637ff8ca1403b8cff2244c5&=&format=webp&quality=lossless&width=1535&height=863');
+  
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Centers the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #929292;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Images */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.discord-btn {
+    position: absolute;
+    left: 30px; /* Dur-i la dasta chap */
+    top: 20px;  /* Dur-i la sarawa */
+    background-color: #5865F2; /* Rangy Discord */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.discord-btn:hover {
+    background-color: #4752C4;
+    transform: scale(1.05);
+}
+
+.title {
+    margin: 0 auto; /* Bo away "THE NIGHT GANG" la wastada bmenetawa */
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Example styling for a gaming or tech site */
+p {
+    font-family: 'Inter', 'Segoe UI', sans-serif; /* Clean, readable fonts */
+    font-size: 16px;
+    line-height: 1.6;          /* Adds "breathing room" between lines */
+    color: #e0e0e0;            /* Off-white is easier on the eyes in Dark Mode */
+    letter-spacing: 0.5px;     /* Makes headers look more premium */
+}
+
+.highlight {
+    color: #00d2ff;            /* A neon accent color for important info */
+    font-weight: bold;
+}
+body {
+    background-color: #474747; /* Dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.staff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.staff-card {
+    background: rgba(255, 255, 255, 0.05); /* Very transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for glass look */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 30px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.staff-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    border-left: 5px solid #ffffff; /* Adds a small highlight line */
+}
+
+.role {
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.name {
+    font-weight: 500;
+}
